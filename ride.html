@@ -95,116 +95,161 @@
                 padding: 123px 30px;
             }
         }
-        .form-style-10 .inner-wrap {
-            padding: 30px;
-            background: #F8F8F8;
-            border-radius: 6px;
-            margin-bottom: 15px;
+        /* Modern Form Styling */
+        .form-style-10 {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
+
         .form-style-10 h1 {
-            background: #80057c;
-            padding: 20px 30px 15px 30px;
-            margin: -30px -30px 30px -30px;
-            border-radius: 10px 10px 0 0;
+            background: linear-gradient(135deg, #80057c, #bc2bbc);
+            padding: 25px 30px;
+            margin: 0;
             color: #fff;
-            text-shadow: 1px 1px 3px rgba(214, 84, 175, 0.12);
-            font: normal 30px 'Bitter', serif;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            font-size: 28px;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 15px 15px 0 0;
         }
-        .form-style-10 h1 > span {
-            display: block;
-            margin-top: 2px;
-            font: 13px Arial, Helvetica, sans-serif;
-        }
-        .form-style-10 label {
-            display: block;
-            font: 13px Arial, Helvetica, sans-serif;
-            color: #888;
-            margin-bottom: 15px;
-        }
-        .form-style-10 input[type="text"],
-        .form-style-10 input[type="date"],
-        .form-style-10 input[type="datetime"],
-        .form-style-10 input[type="email"],
-        .form-style-10 input[type="number"],
-        .form-style-10 input[type="search"],
-        .form-style-10 input[type="time"],
-        .form-style-10 input[type="url"],
-        .form-style-10 input[type="password"],
-        .form-style-10 textarea,
-        .form-style-10 select {
-            display: block;
-            box-sizing: border-box;
-            width: 100%;
-            padding: 8px;
-            border-radius: 6px;
-            border: 2px solid #fff;
-            box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
-        }
+
         .form-style-10 .section {
-            font: normal 20px 'Bitter', serif;
-            color: #000000;
-            margin-bottom: 5px;
+            font-size: 22px;
+            color: #333;
+            margin: 25px 0 15px;
+            padding-left: 15px;
+            border-left: 4px solid #80057c;
+            position: relative;
         }
+
         .form-style-10 .section span {
-            background: #bc2bbc;
-            padding: 5px 10px;
-            position: absolute;
+            background: #80057c;
+            padding: 8px 15px;
             border-radius: 50%;
-            border: 4px solid #fff;
-            font-size: 14px;
+            font-size: 16px;
             margin-left: -45px;
             color: #fff;
-            margin-top: -3px;
+            position: absolute;
+            top: -5px;
+            left: 0;
         }
-        .form-style-10 input[type="button"],
-        .form-style-10 input[type="submit"] {
-            background: #91279b;
-            padding: 8px 20px;
-            border-radius: 5px;
-            color: #fff;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
-            font: normal 30px 'Bitter', serif;
-            border: 1px solid #760f41;
+
+        .form-style-10 .inner-wrap {
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin: 0 20px 20px;
+        }
+
+        .form-style-10 label {
+            display: block;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-style-10 input[type="text"],
+        .form-style-10 input[type="email"],
+        .form-style-10 input[type="time"],
+        .form-style-10 input[type="date"],
+        .form-style-10 textarea,
+        .form-style-10 select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e1e1;
+            border-radius: 8px;
             font-size: 15px;
+            transition: all 0.3s ease;
+            background: #fff;
         }
-        .form-style-10 input[type="button"]:hover,
+
+        .form-style-10 input:focus,
+        .form-style-10 textarea:focus,
+        .form-style-10 select:focus {
+            border-color: #80057c;
+            box-shadow: 0 0 5px rgba(128, 5, 124, 0.2);
+            outline: none;
+        }
+
+        .form-style-10 textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .button-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .form-style-10 input[type="submit"] {
+            background: linear-gradient(135deg, #80057c, #bc2bbc);
+            padding: 12px 35px;
+            border: none;
+            border-radius: 25px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(128, 5, 124, 0.2);
+        }
+
         .form-style-10 input[type="submit"]:hover {
-            background: #7b033f;
-            box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
-        }
-        .form-style-10 .privacy-policy {
-            float: right;
-            width: 250px;
-            font: 12px Arial, Helvetica, sans-serif;
-            color: #4D4D4D;
-            margin-top: 10px;
-            text-align: right;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(128, 5, 124, 0.3);
         }
 
+        .privacy-policy {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #666;
+        }
 
-        @media (max-width: 575.98px) {
-          .form {
-              width: 100%;
-              padding: 10px;
-          }
+        .privacy-policy input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+        }
 
-          .form-style-10 {
-              margin: 30px auto;
-              padding: 20px;
-          }
+        /* Error state styling */
+        .form-style-10 input.error,
+        .form-style-10 textarea.error {
+            border-color: #dc3545;
+        }
 
-          .form-style-10 h1 {
-              font-size: 24px;
-          }
+        .error-message {
+            color: #dc3545;
+            font-size: 12px;
+            margin-top: 5px;
+            display: none;
+        }
 
-          .form-style-10 .section {
-              font-size: 18px;
-          }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .form-style-10 {
+                margin: 20px;
+            }
 
-          .footer a {
-              display: block;
-              margin-bottom: 5px;
-          }
+            .form-style-10 h1 {
+                font-size: 24px;
+                padding: 20px;
+            }
+
+            .form-style-10 .section {
+                font-size: 18px;
+            }
+
+            .form-style-10 .inner-wrap {
+                padding: 20px;
+            }
         }
         header {
             display: flex;
@@ -360,29 +405,56 @@
     </header>
     <div class="form">
         <div class="form-style-10">
-            <h1>Rider Details!<span></span></h1>
+            <h1>Rider Details</h1>
             <form id="riderForm">
-                <div class="section"><span>1</span>First Name & Address</div>
+                <div class="section"><span>1</span>Personal Information</div>
                 <div class="inner-wrap">
-                    <label>Your Full Name <input type="text" name="field1" /></label>
-                    <label>Address <textarea name="field2"></textarea></label>
+                    <label>Full Name <span class="required">*</span></label>
+                    <input type="text" name="field1" placeholder="Enter your full name" />
+                    <div class="error-message">Please enter your full name</div>
+
+                    <label>Address <span class="required">*</span></label>
+                    <textarea name="field2" placeholder="Enter your complete address"></textarea>
+                    <div class="error-message">Please enter your address</div>
                 </div>
-                <div class="section"><span>2</span>Email & Phone</div>
+
+                <div class="section"><span>2</span>Contact Information</div>
                 <div class="inner-wrap">
-                    <label>Email Address <input type="email" name="field3" /></label>
-                    <label>Phone Number <input type="text" name="field4" /></label>
+                    <label>Email Address <span class="required">*</span></label>
+                    <input type="email" name="field3" placeholder="Enter your email address" />
+                    <div class="error-message">Please enter a valid email address</div>
+
+                    <label>Phone Number <span class="required">*</span></label>
+                    <input type="tel" name="field4" placeholder="Enter your phone number" />
+                    <div class="error-message">Please enter your phone number</div>
                 </div>
-                <div class="section"><span>3</span>Location & Time</div>
+
+                <div class="section"><span>3</span>Ride Details</div>
                 <div class="inner-wrap">
-                    <label>Location <input type="text" name="field5" /></label>
-                    <label>Time <input type="time" name="time" id="time" /></label>
-                    <label>Date <input type="date" name="date" id="date" /></label>
+                    <label>Pickup Location <span class="required">*</span></label>
+                    <input type="text" name="field5" placeholder="Enter pickup location" />
+                    <div class="error-message">Please enter pickup location</div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Pickup Time <span class="required">*</span></label>
+                            <input type="time" name="time" id="time" />
+                            <div class="error-message">Please select pickup time</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Pickup Date <span class="required">*</span></label>
+                            <input type="date" name="date" id="date" min="<?php echo date('Y-m-d'); ?>" />
+                            <div class="error-message">Please select pickup date</div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="button-section">
-                    <input type="submit" value="Submit" />
-                    <span class="privacy-policy">
-                        <input type="checkbox" name="field7">You agree to our Terms and Policy.
-                    </span>
+                    <div class="privacy-policy">
+                        <input type="checkbox" name="field7" id="terms" required>
+                        <label for="terms">I agree to the Terms and Conditions</label>
+                    </div>
+                    <input type="submit" value="Book Your Ride" />
                 </div>
             </form>
         </div>
@@ -393,30 +465,83 @@
     <!-- JavaScript for smooth scroll to top -->
     <script>
         document.getElementById('riderForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission to handle validation
-    
-            // Check if any fields are empty
+            event.preventDefault();
+            
             let form = event.target;
             let isValid = true;
-    
-            form.querySelectorAll('input[type="text"], input[type="email"], input[type="time"], input[type="date"], textarea').forEach(function(input) {
-                if (input.value.trim() === '') {
+            let firstError = null;
+
+            // Reset previous error states
+            form.querySelectorAll('.error-message').forEach(msg => msg.style.display = 'none');
+            form.querySelectorAll('input, textarea').forEach(input => input.classList.remove('error'));
+
+            // Validate all required fields
+            form.querySelectorAll('input[required], textarea[required]').forEach(function(input) {
+                if (!input.value.trim()) {
                     isValid = false;
                     input.classList.add('error');
-                } else {
-                    input.classList.remove('error');
+                    input.nextElementSibling.style.display = 'block';
+                    if (!firstError) firstError = input;
                 }
             });
-    
-            // If valid, submit the form and redirect
+
+            // Validate email format
+            const emailInput = form.querySelector('input[type="email"]');
+            if (emailInput.value && !isValidEmail(emailInput.value)) {
+                isValid = false;
+                emailInput.classList.add('error');
+                emailInput.nextElementSibling.textContent = 'Please enter a valid email address';
+                emailInput.nextElementSibling.style.display = 'block';
+            }
+
+            // Validate phone number
+            const phoneInput = form.querySelector('input[type="tel"]');
+            if (phoneInput.value && !isValidPhone(phoneInput.value)) {
+                isValid = false;
+                phoneInput.classList.add('error');
+                phoneInput.nextElementSibling.textContent = 'Please enter a valid phone number';
+                phoneInput.nextElementSibling.style.display = 'block';
+            }
+
+            // Validate terms checkbox
+            const termsCheckbox = form.querySelector('input[type="checkbox"]');
+            if (!termsCheckbox.checked) {
+                isValid = false;
+                termsCheckbox.classList.add('error');
+                alert('Please agree to the Terms and Conditions');
+            }
+
             if (isValid) {
-                // Simulate form submission here (e.g., send data to backend)
-                alert('Form submitted successfully!');
-                window.location.href = 'index.html'; // Redirect to homepage
+                // Show success message
+                const successMessage = document.createElement('div');
+                successMessage.style.cssText = 'background: #28a745; color: white; padding: 15px; border-radius: 5px; margin: 10px 0; text-align: center;';
+                successMessage.textContent = 'Booking successful! Redirecting...';
+                form.insertBefore(successMessage, form.firstChild);
+
+                // Simulate form submission
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 2000);
             } else {
-                alert('Please fill out all required fields.');
+                // Scroll to first error
+                if (firstError) {
+                    firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
             }
         });
+
+        function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        function isValidPhone(phone) {
+            return /^\+?[\d\s-]{10,}$/.test(phone);
+        }
+
+        // Set minimum date to today
+        const dateInput = document.getElementById('date');
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.min = today;
     </script>
     <script src="script.js"></script>
     <script>
